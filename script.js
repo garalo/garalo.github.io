@@ -16,7 +16,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const ctaButton = document.querySelector('.cta-button');
 if (ctaButton) {
     ctaButton.addEventListener('click', function() {
-        alert('Hoşgeldiniz! SinatraWorks ile web geliştirmeye başlamak için hazırız.');
+        alert('Hoşgeldiniz! GaraloWorks ile web geliştirmeye başlamak için hazırız.');
     });
 }
 
