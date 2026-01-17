@@ -95,6 +95,8 @@ body {
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
     transition: all 0.3s ease;
     animation: fadeInUp 0.8s ease 0.4s backwards;
 }
@@ -169,6 +171,26 @@ body {
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card .post-date {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card .read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.feature-card .read-more:hover {
+    color: #c0392b;
 }
 
 .feature-card h3 {
