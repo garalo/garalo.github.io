@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GaraloWorks</title>
+    <link>https://garalo.github.io</link>
+    <description>Ruby, Sinatra ve modern web teknolojileri ile geliştirilmiş projeler ve blog yazıları.</description>
+    <language>tr</language>
+    <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://garalo.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>İlk Yazım: GaraloWorks ile Web Geliştirme</title>
+      <link>https://garalo.github.io/blog/post1.html</link>
+      <description>Bu yazıda GaraloWorks projesinin temellerini ve nasıl hızlı bir şekilde modern web uygulamaları oluşturabileceğinizi anlatıyorum.</description>
+      <pubDate>Fri, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://garalo.github.io/blog/post1.html</guid>
+      <author>garalo</author>
+    </item>
+  </channel>
+</rss>

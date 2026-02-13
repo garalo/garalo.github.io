@@ -5,40 +5,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - GaraloWorks</title>
+    <meta name="description" content="GaraloWorks blog yazıları - Ruby, Sinatra ve modern web teknolojileri hakkında makaleler ve ipuçları.">
+    <meta name="keywords" content="web geliştirme, ruby, sinatra, blog, programlama">
+    <meta property="og:title" content="Blog - GaraloWorks">
+    <meta property="og:description" content="Web geliştirme üzerine yazılar ve makaleler">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://garalo.github.io/blog/">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="canonical" href="https://garalo.github.io/blog/">
     <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">GaraloWorks</div>
+            <a href="../index.html" class="logo">GaraloWorks</a>
+            <button class="mobile-menu-btn" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="../#features">Özellikler</a></li>
                 <li><a href="../#about">Hakkında</a></li>
                 <li><a href="../#contact">İletişim</a></li>
                 <li><a href="../">Anasayfa</a></li>
-                <li><a href="./">Blog</a></li>
+                <li><a href="./" class="active">Blog</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Tema değiştir">
+                        <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </svg>
+                        <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <section class="blog">
-        <div class="container">
-            <h1>Blog</h1>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <h3><a href="post1.html">İlk Yazım: GaraloWorks ile Web Geliştirme</a></h3>
-                    <p>Bu yazıda GaraloWorks projesinin temellerini ve nasıl hızlı bir şekilde modern web uygulamaları
-                        oluşturabileceğinizi anlatıyorum.</p>
+    <main class="blog-main">
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Blog</h1>
+                <p class="blog-subtitle">Web geliştirme, programlama ve teknoloji üzerine yazılar</p>
+                <div class="blog-stats">
+                    <span class="stat-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        1 Yazı
+                    </span>
+                    <span class="stat-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        5 dk okuma
+                    </span>
                 </div>
-                <!-- Add more blog-card divs for additional posts -->
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-grid">
+                    <article class="blog-card featured">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=300&fit=crop" alt="Web Geliştirme" loading="lazy">
+                            <span class="category-tag">Web Geliştirme</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="post-meta">
+                                <time datetime="2026-01-17">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                                    </svg>
+                                    17 Ocak 2026
+                                </time>
+                                <span class="read-time">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    5 dk
+                                </span>
+                            </div>
+                            <h2><a href="post1.html">İlk Yazım: GaraloWorks ile Web Geliştirme</a></h2>
+                            <p>Bu yazıda GaraloWorks projesinin temellerini ve nasıl hızlı bir şekilde modern web uygulamaları oluşturabileceğinizi anlatıyorum.</p>
+                            <div class="card-footer">
+                                <a href="post1.html" class="read-more">Devamını Oku <span class="arrow">→</span></a>
+                                <div class="share-buttons">
+                                    <button class="share-btn" aria-label="Paylaş">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Kategoriler</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Web Geliştirme <span>(1)</span></a></li>
+                            <li><a href="#">Ruby <span>(1)</span></a></li>
+                            <li><a href="#">Sinatra <span>(1)</span></a></li>
+                            <li><a href="#">Genel <span>(0)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h3>Son Yazılar</h3>
+                        <ul class="recent-posts">
+                            <li><a href="post1.html">İlk Yazım: GaraloWorks ile Web Geliştirme</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget newsletter">
+                        <h3>Bülten</h3>
+                        <p>Yeni yazılardan haberdar olmak için abone olun.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="E-posta adresiniz" id="newsletter-email" required>
+                            <button type="submit" id="newsletter-btn">Abone Ol</button>
+                        </form>
+                        <div class="newsletter-message" id="newsletter-message"></div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="blog-search">
+            <div class="container">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="search" placeholder="Yazılarda ara..." id="blog-search">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 GaraloWorks. Tüm hakları saklıdır.</p>
+            <div class="footer-content">
+                <p>&copy; 2026 GaraloWorks. Tüm hakları saklıdır.</p>
+                <div class="social-links">
+                    <a href="https://github.com/garalo" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="../script.js"></script>
